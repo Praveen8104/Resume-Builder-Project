@@ -1,0 +1,14 @@
+body{
+    height: 100svh;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume_body{
+    width: 600px;
+    height: 1000px;
+    background-color: white;
+}
