@@ -23,7 +23,8 @@
         <hr>
         <div class="summary">
             <h2>Summary</h2>
-            <p class="summary_matter">Highly motivated and enthusiastic individual with a passion for learning new technologies and programming
+            <p class="summary_matter">Highly motivated and enthusiastic individual with a passion for learning new
+                technologies and programming
                 languages. I am a quick learner and a team player with good communication skills. I am looking for an
                 opportunity to work in a challenging environment to prove my skills and utilize my knowledge.</p>
         </div>
@@ -63,16 +64,26 @@
             <h2>Projects</h2>
             <div class="project-details">
                 <h5 class="project-title">Project 1</h5>
-                <p class="project-description">Description of the project goes here. This is a sample project description.
+                <p class="project-description">Description of the project goes here. This is a sample project
+                    description.
                     You can add as many projects as you want.</p>
                 <h5 class="project-title">Project 2</h5>
-                <p class="project-description">Description of the project goes here. This is a sample project description.
+                <p class="project-description">Description of the project goes here. This is a sample project
+                    description.
                     You can add as many projects as you want.</p>
             </div>
         </div>
         <hr>
-
-        <script src="./script.js"></script>
+    </div>
+    <center><button id="download">Download RESUME</button></center>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script>
+        document.getElementById('download').addEventListener('click', () => {
+            const element = document.querySelector('.resume_body');
+            html2pdf().from(element).save();
+        });
+    </script>
 </body>
 
 </html>
