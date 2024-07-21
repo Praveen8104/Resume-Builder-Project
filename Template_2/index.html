@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="resume_body">
+        <div class="resume_header">
+            <div class="name">Praveen Reddy</div>
+            <div class="job_title">FULL STACK TRAINEE</div>
+            <hr>
+            <div class="personal_info">
+                <div class="email">praveenreddygoli8@gmail.com</div>
+                <div class="phone">+917997442758</div>
+                <div class="linkedin"><a href="https://www.linkedin.com/in/praveen-reddy-goli-a9b786286/">Linkedin</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="resume_main">
+            <div class="summary">
+                <div class="summary_title">Summary</div>
+                <div class="summary_content">Highly motivated and enthusiastic individual with a passion for new
+                    technologies and programming
+                    languages. I am a quick learner and a team player with good communication skills. I am looking for
+                    an
+                    opportunity to work in a challenging environment to prove my skills and utilize my knowledge.</div>
+            </div>
+            <hr>
+            <div class="education_details">
+                <div class="edu_title">Education</div>
+                <div class="education1">
+                    <div class="year">
+                        <div class="start_year">2018</div>-
+                        <div class="end_year"> 2022</div>
+                    </div>
+                    <div class="college_details">
+                        <div class="course">Computer Science,</div>
+                        <div class="degree">B.Tech,</div>
+                        <div class="college">Aditya College,</div>
+                        <div class="location">Surampalem</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="skills">
+                <div class="skill_title">Skills</div>
+                <div class="skill_list">
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">JAVASCRIPT</div>
+                    <div class="skill">REACT</div>
+                    <div class="skill">NODEJS</div>
+                    <div class="skill">EXPRESS</div>
+                    <div class="skill">MONGODB</div>
+                </div>
+            </div>
+            <hr>
+            <div class="projects">
+                <div class="project_title">Projects</div>
+                <div class="project_list">
+                    <div class="project">
+                        <div class="project_name">Project 1</div>
+                        <div class="project_desc">This is a project description</div>
+                    </div>
+                    <div class="project">
+                        <div class="project_name">Project 2</div>
+                        <div class="project_desc">This is a project description</div>
+                    </div>
+                    <div class="project">
+                        <div class="project_name">Project 3</div>
+                        <div class="project_desc">This is a project description</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="extra_activities">
+                <div class="extra_title">Extra Activities</div>
+                <div class="activity_list">
+                    <div class="activity">
+                        <div class="activity_name">Activity-1</div>
+                        <div class="activity_desc">About Activity</div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity_name">Activity-1</div>
+                        <div class="activity_desc">About Activity</div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity_name">Activity-1</div>
+                        <div class="activity_desc">About Activity</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <center><button id="download">Download RESUME</button></center>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script>
+        document.getElementById('download').addEventListener('click', () => {
+            const element = document.querySelector('.resume_body');
+            html2pdf().from(element).save();
+        });
+    </script>
+</body>
+
+</html>
