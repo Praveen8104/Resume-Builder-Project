@@ -1,14 +1,109 @@
 body{
-    height: 100svh;
     width: 100%;
-    background-color: lightblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100svh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
 .resume_body{
     width: 600px;
     height: 1000px;
-    background-color: white;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.head-style{
+    width: 95%;
+    height: 30px;
+    background-color: cadetblue;
+    margin: auto;
+}
+
+.header{
+    width: 95%;
+    height: 160px;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.profile-pic{
+    width: 115px;
+    height: 115px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: auto;
+    /* background-color: green; */
+}
+
+.personal-details{
+    width: 400px;
+    height: 100%;
+    /* background-color: yellow; */
+    margin: auto;
+    line-height: 10px;
+}
+
+p{
+    font-size: 14px;
+}
+
+.summary{
+    width: 95%;
+    height: 150px;
+    margin: auto;
+    /* background-color: lightgreen; */
+}
+
+hr{
+    width: 95%;
+    height: 1px;
+    background-color: black;
+    margin: auto;
+}
+
+.education{
+    width: 95%;
+    height: 175px;
+    margin: auto;
+    /* background-color: lightgreen; */
+}
+
+.education-details{
+    line-height: 10px;
+}
+
+.skills{
+    width: 95%;
+    height: 150px;
+    margin: auto;
+    /* background-color: lightgreen; */
+}
+
+.skills-list{
+    width: 95%;
+    height: 100px;
+    /* background-color: lightblue; */
+}
+
+.skills-list ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list ul li{
+    margin: 15px;
+}
+
+.projects{
+    width: 95%;
+    height: 215px;
+    margin: auto;
+    /* background-color: lightgreen; */
+}
+
+.project-details{
+    line-height: 15px;
 }

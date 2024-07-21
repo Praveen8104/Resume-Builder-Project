@@ -1,0 +1,10 @@
+// var name1 = document.getElementsByClassName('name')[0];
+// var city = document.getElementsByClassName('city')[0];
+// var email = document.getElementsByClassName('email')[0];
+// var phone = document.getElementsByClassName('phone')[0];
+// var summary = document.getElementsByClassName('summary_matter')[0];
+// name1.innerHTML = window.prompt("Enter your name");
+// city.innerHTML = window.prompt("Enter your city");
+// email.innerHTML = window.prompt("Enter your email");
+// phone.innerHTML = window.prompt("Enter your phone number");
+// summary.innerHTML = window.prompt("Enter your Summary");
