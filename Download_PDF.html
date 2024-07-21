@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download UI as PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div id="resume_body">
+        <h1>Hello, World!</h1>
+        <p>This is an example content that will be converted to a PDF.</p>
+        <img src="./flower.avif" alt="Another Example Image">
+    </div>
+    <button id="download">Download PDF</button>
+
+    <script>
+        document.getElementById('download').addEventListener('click', () => {
+            const element = document.getElementById('resume_body');
+                   html2pdf().from(element).save();
+               
+        });
+    </script>
+</body>
+</html>
