@@ -15,7 +15,7 @@ body{
 
 .resume_header{
     width: 90%;
-    height: 200px;
+    height: 165px;
     /* background-color: lightgreen; */
     margin-top: 5%;
 }
@@ -52,6 +52,14 @@ body{
     /* background-color: lightblue; */
 }
 
+.summary{
+    height: 100px;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+}
+
 .summary_title{
     font-size: 14px;
     font-weight: bold;
@@ -60,7 +68,7 @@ body{
 .summary_content{
     font-size: 12px;
     margin-top: 10px;
-    line-height: 17px;
+    line-height: 20px;
 }
 
 .education_details{
