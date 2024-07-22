@@ -1,11 +1,17 @@
 body {
+    width: 100%;
     background-color: #f8f9fa;
     font-family: 'Arial', sans-serif;
+}
+.main_body{
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
 }
 
 .resume_body {
     width: 650px;
-    height: 1100px;
+    height: fit-content;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -243,6 +249,6 @@ button{
     border-radius: 5px;
     color: white;
     font-size: 14px;
-    margin: 10px;
     cursor: pointer;
+    margin-top: 10px;
 }
