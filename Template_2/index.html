@@ -102,20 +102,6 @@
     <center><button id="download">Download RESUME</button></center>
     <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-    <script>
-        document.getElementById('download').addEventListener('click', () => {
-            const element = document.querySelector('.resume_body');
-            const options = {
-                filename: 'Resume.pdf',
-                jsPDF: {
-                    unit: 'px',
-                    format: 'a4',
-                    orientation: 'portrait'
-                }
-            };
-            html2pdf().from(element).set(options).save();
-        });
-    </script>
 
 </body>
 
