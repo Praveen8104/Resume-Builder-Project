@@ -5,7 +5,7 @@ body {
 
 .resume_body {
     width: 650px;
-    height: 1200px;
+    height: 1100px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -126,26 +126,26 @@ hr {
     margin-top: 5px;
 }
 
-.project_right{
+.project_right {
     margin-right: 20px;
     margin-top: 10px;
     font-size: 12px;
     line-height: 16px;
 }
 
-.achivements_title{
+.achivements_title {
     font-size: 18px;
     margin-left: 20px;
     margin-top: 10px;
 }
 
-.achivements{
+.achivements {
     width: 95%;
     height: 250px;
     /* background-color: lightblue; */
 }
 
-.achivement_info{
+.achivement_info {
     width: 95%;
     display: flex;
     justify-content: space-between;
@@ -154,44 +154,94 @@ hr {
     margin-top: 10px;
 }
 
-.achivement_desc{
+.achivement_desc {
     width: 70%;
     height: fit-content;
     font-size: 12px;
 }
 
-.skills_title{
+.skills_title {
     font-size: 18px;
     margin-left: 20px;
     margin-top: 10px;
 }
 
-.technical_skills{
+.technical_skills {
     width: 95%;
-    height: 200px;
+    height: 90px;
     /* background-color: lightgreen; */
 }
 
-.programming_skills{
+.programming_skills {
     width: 95%;
     height: fit-content;
     /* background-color: lightcoral;    */
     display: flex;
-    margin: auto;
     font-size: 14px;
+    margin-left: 20px;
 }
 
-.skills_list{
+.skills_list {
     font-size: 12px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
-.web_dev_skills{
+.web_dev_skills {
     width: 95%;
     height: fit-content;
     /* background-color: lightblue;    */
     display: flex;
-    margin: auto;
+    margin-left: 20px;
     margin-top: 10px;
     font-size: 14px;
+}
+
+.db_skills {
+    width: 95%;
+    height: fit-content;
+    /* background-color: lightblue;    */
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.relevant_courseworks_title {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.relevant_courseworks {
+    width: 95%;
+    height: 90px;
+    /* background-color: yellow; */
+}
+
+.courseworks_list{
+    width: 95%;
+    height: fit-content;
+    /* background-color: lightcoral;    */
+    display: flex;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.courselist{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+    cursor: pointer;
 }
