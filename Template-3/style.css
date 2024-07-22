@@ -5,7 +5,7 @@ body {
 
 .resume_body {
     width: 650px;
-    height: 1000px;
+    height: 1200px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -133,8 +133,65 @@ hr {
     line-height: 16px;
 }
 
+.achivements_title{
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
 .achivements{
     width: 95%;
     height: 250px;
-    /* background-color: green; */
+    /* background-color: lightblue; */
+}
+
+.achivement_info{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.achivement_desc{
+    width: 70%;
+    height: fit-content;
+    font-size: 12px;
+}
+
+.skills_title{
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.technical_skills{
+    width: 95%;
+    height: 200px;
+    /* background-color: lightgreen; */
+}
+
+.programming_skills{
+    width: 95%;
+    height: fit-content;
+    /* background-color: lightcoral;    */
+    display: flex;
+    margin: auto;
+    font-size: 14px;
+}
+
+.skills_list{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.web_dev_skills{
+    width: 95%;
+    height: fit-content;
+    /* background-color: lightblue;    */
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 14px;
 }
