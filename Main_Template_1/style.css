@@ -6,7 +6,7 @@ body{
 }
 
 .resume{
-    width: 55%;
+    width: 600px;
     height: fit-content;
     background-color: #fff;
     margin: 0 auto;
@@ -223,7 +223,7 @@ body{
 .interests_hobbies{
     width: 100%;
     height: fit-content;
-    background-color: lightyellow;
+    /* background-color: lightyellow; */
     margin-top: 10px;
 }
 
