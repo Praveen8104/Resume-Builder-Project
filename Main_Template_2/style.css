@@ -1,15 +1,118 @@
 body{
-    background-color: #f0f0f0;
+    background-color: gray;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+hr{
+    width: 95%;
 }
 
 .resume{
     width: 650px;
     height: 1000px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume_body{
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+    /* background-color: yellow; */
+}
+
+.resume_header{
+    width: 100%;
+    height: 150px;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+}
+
+.profile_pic{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-left: 50px;
+    background-image: url("https://i.pinimg.com/564x/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.jpg");
+    background-size: 100% 100%;
+}
+
+.name{
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+.resume_main{
+    width: 100%;
+    height: 800px;
+    /* background-color: lightblue; */
+    display: flex;
+    overflow: hidden;
+}
+
+.resume_main_left{
+    width: 30%;
+    height: 100%;
+    background-color: lightgray;
+    float: left;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.contact_info{
+    width: 100%;
+    height: fit-content;
+    /* background-color: lightgreen; */
+}
+
+h4{
+    margin-left: 20px;
+}
+
+.contact_info div{
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.resume_main_right{
+    width: 70%;
+    height: 100%;
+    /* background-color: lightgreen; */
+}
+
+.carrer_objective{
+    width: 100%;
+    height: fit-content;
+    /* background-color: lightcoral; */
+    margin-top: 20px;
+}
+
+.carrer_objective_title{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.carrer_objective_content{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.education_details{
+    width: 100%;
+    height: fit-content;
+    /* background-color: lightcoral; */
+    margin-top: 20px;
+}
+
+.education_details .education{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
 }
