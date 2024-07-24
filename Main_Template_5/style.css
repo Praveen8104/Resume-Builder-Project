@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: grey; */
+}
+
+.resume {
+    width: 800px;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.resume_main {
+    width: 100%;
+    height: 100%;
+}
+
+.resume_header{
+    width: 100%;
+    height: 175px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    margin-left: 30px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.personal_info{
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    /* background-color: yellow; */
+}
+
+.email{
+    margin-right: 10px;
+}
+
+.phone{
+    margin-right: 10px;
+}
+
+.pincode{
+    margin-right: 10px;
+}
+
+.name{
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: end;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 16px;
+    
+}
+
+.address_part1{
+    display: flex;
+    flex-direction: row;
+}
+
+.address_part2{
+    display: flex;
+    flex-direction: row;
+}
+
+.address div{
+    margin-right: 5px;
+}
+
+.resume_body{
+    width: 100%;
+    height: 80%;
+    /* background-color: white; */
+}
+
+.education{
+    width: 100%;
+    height: fit-content;
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+}
+
+.education_title{
+    width: 100%;
+    height: fit-content;
+    font-weight: bold;
+    background-color: #669BBC;
+    margin-top: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.education_item{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: lightgreen; */
+    margin-top: 10px;
+    font-size: 12px;
+    box-shadow: 0px 0px 5px 0px grey;
+}
+
+.education_left{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.education_right{
+    margin-right: 10px;
+}
+
+.education_duration{
+    display: flex;
+}
+
+.education_duration div{
+    margin-left: 5px;
+}
+
+.internships{
+    width: 100%;
+    height: fit-content;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+}
+
+.internship_title{
+    width: 100%;
+    height: fit-content;
+    font-weight: bold;
+    background-color: #669BBC;
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.internship_content{
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 17px;
+    box-shadow: 0px 0px 5px 0px grey;
+    padding: 10px;
+}
+
+.projects{
+    width: 100%;
+    height: fit-content;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+}
+
+.projects_title{
+    width: 100%;
+    height: fit-content;
+    font-weight: bold;
+    background-color: #669BBC;
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.projects_content{
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px 0px grey;
+    padding: 10px;
+}
+
+.projects_content div{
+    margin-top: 10px;
+}
+
+.project_item{
+    font-size: 12px;
+}
+
+.trainings_workshop{
+    width: 100%;
+    height: fit-content;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+}
+
+.trainings_title{
+    width: 100%;
+    height: fit-content;
+    font-weight: bold;
+    background-color: #669BBC;
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.trainings_content{
+    margin-top: 10px;
+    font-size: 12px;
+    box-shadow: 0px 0px 5px 0px grey;
+    padding: 10px;
+}
+
+.personal_details{
+    width: 100%;
+    height: fit-content;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+}
+
+.personal_details_title{
+    width: 100%;
+    height: fit-content;
+    font-weight: bold;
+    background-color: #669BBC;
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.personal_details_content{
+    margin-top: 10px;
+    font-size: 12px;
+    box-shadow: 0px 0px 5px 0px grey;
+    padding: 10px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+    cursor: pointer;
+}
