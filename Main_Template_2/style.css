@@ -20,7 +20,7 @@ hr{
 
 .resume_body{
     width: 100%;
-    height: fit-content;
+    height: 1000px;
     border: 1px solid black;
     /* background-color: yellow; */
 }
@@ -104,6 +104,55 @@ h4{
     font-size: 14px;
 }
 
+.projects{
+    width: 100%;
+    height: fit-content;
+    /* background-color: lightcoral; */
+    margin-top: 20px;
+}
+
+.projects_title{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.projects_content{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.project_name_duration{
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_name{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.project_duration{
+    display: flex;
+    font-size: 12px;
+}
+
+.project_duration div{
+    margin-right: 5px;
+}
+
+.project_description{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.project{
+    margin-top: 10px;
+}
+
+
 .education_details{
     width: 100%;
     height: fit-content;
@@ -115,4 +164,138 @@ h4{
     margin-top: 10px;
     margin-left: 20px;
     font-size: 14px;
+}
+
+.skills{
+    width: 100%;
+    height: fit-content;
+    /* background-color: lightcoral; */
+    margin-top: 30px;
+}
+
+.skills .skill{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.languages .language{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.interests_hobbies .interest{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.achivements_certifications{
+    width: 100%;
+    height: fit-content;
+    /* background-color: lightcoral; */
+    margin-top: 20px;
+}
+
+.achivements_certification_title{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.achivements_certification_content{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.achivement{
+    margin-top: 5px;
+}
+
+.achivement_top{
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.achivement_name{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.achivement_desc{
+    margin-top: 5px;
+}
+
+.achivement .achivement_duration{
+    display: flex;
+    font-size: 12px;
+}
+
+.achivement .achivement_duration div{
+    margin-right: 5px;
+}
+
+.internships{
+    width: 100%;
+    height: fit-content;
+    /* background-color: lightcoral; */
+    margin-top: 20px;
+}
+
+.internships_title{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.internships_content{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.internship{
+    margin-top: 5px;
+}
+
+.internship_top{
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.internship_name{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.internship_duration{
+    display: flex;
+    font-size: 12px;
+}
+
+.internship_role{
+    margin-top: 5px;
+    display: flex;
+}
+
+.internship_role_content{
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.internship_desc{
+    margin-top: 5px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+    cursor: pointer;
 }
