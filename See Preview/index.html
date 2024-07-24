@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See preview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="up">
+        <div class="up_left">
+            <div class="up_main_tag">
+                Improve your resume with our toolkit
+            </div>
+            <div class="up_sub_tag">
+                Designed by top recruiters, our AI-powered platform instantly gives you tailored feedback on your resume.
+            </div>
+            <div class="buttons">
+                <button class="login">Login / SignUp</button>
+                <button class="preview">
+                    <a href="#down" onclick="smoothScrollToDown()">See Preview</a>
+                </button>
+            </div>
+            
+        </div>
+        <div class="up_right">
+            <img src="https://resumeworded.com/assets/images/updated-homepage-sketch.png" alt="">
+        </div>
+    </div>
+    <div id="down">
+        <div class="down_main_tag">
+            Your personal resume coach
+        </div>
+        <div class="sub_tag">
+            Join over 1 million experienced professionals, graduates and students who have used Resume Worded's toolkit
+            to get ahead in their careers.
+        </div>
+        <div class="buttons_bar">
+            <button class="buttons_bar_button" id="create_resume_btn">CREATE RESUME</button>
+            <button class="buttons_bar_button" id="resume_samples_btn">RESUME SAMPLES</button>
+            <button class="buttons_bar_button" id="resume_targeting_btn">RESUME TARGETING</button>
+            <button class="buttons_bar_button" id="reviews_btn">REVIEWS</button>
+        </div>
+    </div>
+    <div class="divs_block">
+        <div class="create_resume" id="create_resume">
+            <div class="create_resume_content">CREATE RESUME</div>
+        </div>
+        <div class="resume_samples" id="resume_samples" style="display: none;">
+            <div class="resume_samples_content">RESUME SAMPLES</div>
+        </div>
+        <div class="resume_targeting" id="resume_targeting" style="display: none;">
+            <div class="resume_targeting_content">RESUME TARGETING</div>
+        </div>
+        <div class="reviews" id="reviews" style="display: none;">
+            <div class="reviews_content">REVIEWS</div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
