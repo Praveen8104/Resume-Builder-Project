@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Input</title>
+</head>
+
+<body>
+    <div class="personal_details">
+        <div class="name"></div>
+        <div class="email"></div>
+        <div class="phone"></div>
+        <div class="address"></div>
+    </div>
+    <script>
+        const personalDetailsArray = JSON.parse(localStorage.getItem('personalDetailsArray'));
+        console.log(personalDetailsArray);
+        const personalDetails = document.querySelector('.personal_details');
+        personalDetailsArray.forEach(personalDetail => {
+            const name = document.createElement('div');
+            name.classList.add('name');
+            name.textContent = personalDetail.name;
+            personalDetails.appendChild(name);
+
+            const email = document.createElement('div');
+            email.classList.add('email');
+            email.textContent = personalDetail.email;
+            personalDetails.appendChild(email);
+
+            const phone = document.createElement('div');
+            phone.classList.add('phone');
+            phone.textContent = personalDetail.phone;
+            personalDetails.appendChild(phone);
+
+            const address = document.createElement('div');
+            address.classList.add('address');
+            address.textContent = personalDetail.address;
+            personalDetails.appendChild(address);
+        });
+    </script>
+</body>
+
+</html>

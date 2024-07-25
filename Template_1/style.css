@@ -46,6 +46,14 @@ body{
     line-height: 10px;
 }
 
+.personal-details div{
+    margin-top: 15px;
+}
+
+.personal-details .address{
+    line-height: normal;
+}
+
 p{
     font-size: 14px;
 }
