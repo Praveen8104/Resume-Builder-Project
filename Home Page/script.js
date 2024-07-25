@@ -21,55 +21,55 @@ function smoothScrollToDown() {
     window.requestAnimationFrame(scroll);
 };
 
-var create_resume_btn = document.getElementById('create_resume_btn');
+var how_to_use_btn = document.getElementById('how_to_use_btn');
 var resume_samples_btn = document.getElementById('resume_samples_btn');
-var resume_targeting_btn = document.getElementById('resume_targeting_btn');
+var companies_placed_btn = document.getElementById('companies_placed_btn');
 var reviews_btn = document.getElementById('reviews_btn');
-var create_resume = document.getElementById('create_resume');
+var how_to_use = document.getElementById('how_to_use');
 var resume_samples = document.getElementById('resume_samples');
-var resume_targeting = document.getElementById('resume_targeting');
+var companies_placed = document.getElementById('companies_placed');
 var reviews = document.getElementById('reviews');
-create_resume_btn.addEventListener('click', () => {
-    create_resume.style.display = 'block';
-    create_resume_btn.style.backgroundColor = '#133D87';
+how_to_use_btn.addEventListener('click', () => {
+    how_to_use.style.display = 'block';
+    how_to_use_btn.style.backgroundColor = '#133D87';
     resume_samples.style.display = 'none';
     resume_samples_btn.style.backgroundColor = 'transparent';
-    resume_targeting.style.display = 'none';
-    resume_targeting_btn.style.backgroundColor = 'transparent';
+    companies_placed.style.display = 'none';
+    companies_placed_btn.style.backgroundColor = 'transparent';
     reviews.style.display = 'none';
     reviews_btn.style.backgroundColor = 'transparent';
 });
 
 resume_samples_btn.addEventListener('click', () => {
-    create_resume.style.display = 'none';
-    create_resume_btn.style.backgroundColor = 'transparent';
+    how_to_use.style.display = 'none';
+    how_to_use_btn.style.backgroundColor = 'transparent';
     resume_samples.style.display = 'block';
     resume_samples_btn.style.backgroundColor = '#133D87';
-    resume_targeting.style.display = 'none';
-    resume_targeting_btn.style.backgroundColor = 'transparent';
+    companies_placed.style.display = 'none';
+    companies_placed_btn.style.backgroundColor = 'transparent';
     reviews.style.display = 'none';
     reviews_btn.style.backgroundColor = 'transparent';
 }
 );
 
-resume_targeting_btn.addEventListener('click', () => {
-    create_resume.style.display = 'none';
-    create_resume_btn.style.backgroundColor = 'transparent';
+companies_placed_btn.addEventListener('click', () => {
+    how_to_use.style.display = 'none';
+    how_to_use_btn.style.backgroundColor = 'transparent';
     resume_samples.style.display = 'none';
     resume_samples_btn.style.backgroundColor = 'transparent';
-    resume_targeting.style.display = 'block';
-    resume_targeting_btn.style.backgroundColor = '#133D87';
+    companies_placed.style.display = 'block';
+    companies_placed_btn.style.backgroundColor = '#133D87';
     reviews.style.display = 'none';
     reviews_btn.style.backgroundColor = 'transparent';
 });
 
 reviews_btn.addEventListener('click', () => {
-    create_resume.style.display = 'none';
-    create_resume_btn.style.backgroundColor = 'transparent';
+    how_to_use.style.display = 'none';
+    how_to_use_btn.style.backgroundColor = 'transparent';
     resume_samples.style.display = 'none';
     resume_samples_btn.style.backgroundColor = 'transparent';
-    resume_targeting.style.display = 'none';
-    resume_targeting_btn.style.backgroundColor = 'transparent';
+    companies_placed.style.display = 'none';
+    companies_placed_btn.style.backgroundColor = 'transparent';
     reviews.style.display = 'block';
     reviews_btn.style.backgroundColor = '#133D87';
 });
