@@ -9,36 +9,20 @@
 
 <body>
     <div class="personal_details">
-        <div class="name"></div>
+        <div class="name">Hai</div>
         <div class="email"></div>
         <div class="phone"></div>
         <div class="address"></div>
     </div>
     <script>
         const personalDetailsArray = JSON.parse(localStorage.getItem('personalDetailsArray'));
-        console.log(personalDetailsArray);
+        console.log(personalDetailsArray[0]);
+        const values = Object.values(personalDetailsArray[0]);
         const personalDetails = document.querySelector('.personal_details');
-        personalDetailsArray.forEach(personalDetail => {
-            const name = document.createElement('div');
-            name.classList.add('name');
-            name.textContent = personalDetail.name;
-            personalDetails.appendChild(name);
-
-            const email = document.createElement('div');
-            email.classList.add('email');
-            email.textContent = personalDetail.email;
-            personalDetails.appendChild(email);
-
-            const phone = document.createElement('div');
-            phone.classList.add('phone');
-            phone.textContent = personalDetail.phone;
-            personalDetails.appendChild(phone);
-
-            const address = document.createElement('div');
-            address.classList.add('address');
-            address.textContent = personalDetail.address;
-            personalDetails.appendChild(address);
-        });
+        personalDetails.querySelector('.name').innerHTML = `Name: ${values[0]}`;
+        personalDetails.querySelector('.email').textContent = `Email: ${values[1]}`;
+        personalDetails.querySelector('.phone').textContent = `Phone: ${values[2]}`;
+        personalDetails.querySelector('.address').textContent = `Address: ${values[3]}`;
     </script>
 </body>
 

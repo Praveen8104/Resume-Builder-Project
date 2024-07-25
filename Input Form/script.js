@@ -6,17 +6,19 @@ const phoneInput = document.getElementById('phone');
 const addressInput = document.getElementById('address');
 const displayArea = document.getElementById('display-area');
 
-var personalDetailsArray = [];
+// localStorage.clear();
+
+// Initialize the personal details array
+let personalDetailsArray = [];
 
 // Retrieve the personal details array from local storage on page load
 window.onload = () => {
     const storedPersonalDetailsArray = localStorage.getItem('personalDetailsArray');
     if (storedPersonalDetailsArray) {
         personalDetailsArray = JSON.parse(storedPersonalDetailsArray);
-        console.log(personalDetailsArray[personalDetailsArray.length - 1]);
+        console.log('Initial personalDetailsArray:', personalDetailsArray);
     }
 };
-
 
 // Add event listener to the submit button
 document.getElementById('submit-btn').addEventListener('click', (e) => {
@@ -37,7 +39,17 @@ document.getElementById('submit-btn').addEventListener('click', (e) => {
     };
 
     // Add the personal details to the array
-    if (personalDetailsArray.length > 0) {
+    if(personalDetailsArray.length > 0){
+        // for(let i = 0; i < personalDetailsArray.length; i++){
+        //     if(personalDetailsArray[i].email === email){
+        //         alert('Email already exists');
+        //         return;
+        //     }
+        //     else if(personalDetailsArray[i].phone === phone){
+        //         alert('Phone number already exists');
+        //         return;
+        //     }
+        // }
         personalDetailsArray.pop();
     }
     personalDetailsArray.push(personalDetails);
@@ -52,12 +64,5 @@ document.getElementById('submit-btn').addEventListener('click', (e) => {
     addressInput.value = '';
 
     // Log the updated personalDetailsArray to the console
-    console.log(personalDetailsArray);
-});
-
-// Clear the local storage
-document.getElementById('clear-btn').addEventListener('click', () => {
-    localStorage.clear();
-    personalDetailsArray = [];
-    console.log('PersonalDetailsArray cleared:', personalDetailsArray);
+    console.log('Updated personalDetailsArray:', personalDetailsArray);
 });
