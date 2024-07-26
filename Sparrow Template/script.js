@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
     email.innerHTML = personal_details[1];
     var phone = document.getElementById('phone');
     phone.innerHTML = personal_details[2];
-    // var address = document.getElementById('address');
-    // address.innerHTML = personal_details[3];
+    var address = document.getElementById('address');
+    address.innerHTML = personal_details[3];
 
     //Education Details
     var institute1 = document.getElementById('institute1');
