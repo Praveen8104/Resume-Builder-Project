@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparrow Template</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="resume">
+        <div class="resumeBody">
+
+            <div class="personalDetails">
+                <div class="personalDetailsUp">
+                    <div id="name"></div>
+                </div>
+                <div class="personalDetailsDown">
+                    <div class="logo">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div id="email"></div>
+                    </div>
+                    <div>|</div>
+                    <div class="logo">
+                        <i class="fa-brands fa-github"></i>
+                        <div id="github">GitHub</div>
+                    </div>
+                    <div>|</div>
+                    <div class="logo">
+                        <i class="fa-solid fa-phone"></i>
+                        <div id="phone"></div>
+                    </div>
+                    <!-- <div id="address"></div> -->
+                </div>
+            </div>
+
+            <div class="educationalDetails">
+                <div class="educationalDetailsHeading">Education</div>
+                <div class="underline"></div>
+                <div class="education">
+                    <div class="educationLeft">
+                        <div id="institute1"></div>
+                        <div id="location1"></div>
+                        <div id="degree1"></div>
+                    </div>
+                    <div class="educationRight">
+                        <div id="cgpa1"></div>
+                        <div class="eduDuration">
+                            <div id="startYear1"></div>
+                            <div>-</div>
+                            <div id="endYear1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projectDetails">
+                <div class="projectHeading">Projects</div>
+                <div class="underline"></div>
+                <div class="project">
+                    <div class="projectLeft">
+                        <div id="projectName1" class="projectName"></div>
+                        <div id="projectRole1"></div>
+                        <div id="projectDesc1"></div>
+                    </div>
+                    <div class="projectRight">
+                        <div class="projectDuration">
+                            <div id="projectStartYear1"></div>
+                            <div>-</div>
+                            <div id="projectEndYear1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="projectLeft">
+                        <div id="projectName2" class="projectName"></div>
+                        <div id="projectRole2"></div>
+                        <div id="projectDesc2"></div>
+                    </div>
+                    <div class="projectRight">
+                        <div class="projectDuration">
+                            <div id="projectStartYear2"></div>
+                            <div>-</div>
+                            <div id="projectEndYear2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="internshipDetails">
+                <div class="internshipHeading">Internships</div>
+                <div class="underline"></div>
+                <div class="internship">
+                    <div class="internshipLeft">
+                        <div id="internshipName1" class="internshipName"></div>
+                        <div id="internshipRole1"></div>
+                        <div id="internshipDesc1"></div>
+                    </div>
+                    <div class="internshipRight">
+                        <div class="internshipDuration">
+                            <div id="internshipStartYear1"></div>
+                            <div>-</div>
+                            <div id="internshipEndYear1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="internship">
+                    <div class="internshipLeft">
+                        <div id="internshipName2" class="internshipName"></div>
+                        <div id="internshipRole2"></div>
+                        <div id="internshipDesc2"></div>
+                    </div>
+                    <div class="internshipRight">
+                        <div class="internshipDuration">
+                            <div id="internshipStartYear2"></div>
+                            <div>-</div>
+                            <div id="internshipEndYear2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profileDetails">
+                <div class="profileHeading">Profiles</div>
+                <div class="profileList">
+                    <div id="profile1"></div>
+                    <div id="profile2"></div>
+                    <div id="profile3"></div>
+                    <div id="profile4"></div>
+                    <div id="profile5"></div>
+                    <div id="profile6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <button id="download" style="margin: 20px;">Download RESUME</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
