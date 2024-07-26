@@ -2,35 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@page {
-    size: A4;
-    margin: 0;
-}
-
-body {
+  }
+  
+  body {
+    width: 100%;
+    height: 100svh;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: grey; */
-}
-
-.resume {
-    width: 100%;
-    height: ;
-    padding: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+    background-color: lightblue;
+  }
+  
+  .resume {
+    width: 210mm; /* A4 width */
+    height: 297mm; /* A4 height */
+    padding: 10px;
     background-color: white;
     margin: auto;
-}
-
-.resume_main {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume_main {
     width: 100%;
     height: 100%;
     border: 1px solid black;
-    /* margin: auto; */
-}
+    /* padding: 20px; */
+  }
+  
+  /* rest of your CSS code */
 
 .resume_header{
     width: 100%;
@@ -281,17 +283,4 @@ body {
     font-size: 12px;
     box-shadow: 0px 0px 5px 0px grey;
     padding: 10px;
-}
-
-button{
-    width: 150px;
-    height: 50px;
-    background-color: cadetblue;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 14px;
-    margin: 10px;
-    cursor: pointer;
-    margin: auto;
 }
