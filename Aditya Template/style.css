@@ -3,25 +3,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 1.5;
+    line-height: 1.45;
 }
 
 .resume {
     width: 210mm;
     height: 297mm;
-    background-color: pink;
-    padding: 10px;
+    /* background-color: pink; */
+    /* padding: 10px; */
 }
 
 .resumeBody {
     width: 100%;
     height: 100%;
     border: 1px solid black;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 7px;
 }
 
 .personalDetails {
@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .personalDetailsLeft img {
@@ -52,6 +52,7 @@ body {
 #name {
     font-size: 30px;
     font-weight: bold;
+    text-align: end;
 }
 
 #address{
@@ -63,7 +64,7 @@ body {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    /* background-color: pink; */
     gap: 10px;
 }
 
@@ -72,7 +73,7 @@ body {
     height: 30px;
     font-size: 20px;
     font-weight: bold;
-    background-color: green;
+    background-color: #457B98;
 }
 
 .education{
@@ -82,7 +83,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
 .eduDuration{
@@ -98,7 +99,7 @@ body {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    /* background-color: pink; */
     gap: 10px;
 }
 
@@ -107,7 +108,7 @@ body {
     height: 30px;
     font-size: 20px;
     font-weight: bold;
-    background-color: green;
+    background-color: #457B98;
 }
 
 .internship{
@@ -117,7 +118,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
 .internshipDuration{
@@ -133,7 +134,7 @@ body {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    /* background-color: pink; */
     gap: 10px;
 }
 
@@ -142,7 +143,7 @@ body {
     height: 30px;
     font-size: 20px;
     font-weight: bold;
-    background-color: green;
+    background-color: #457B98;
 }
 
 .skillList{
@@ -152,7 +153,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
 .profileDetails{
@@ -160,7 +161,7 @@ body {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    /* background-color: pink; */
     gap: 10px;
 }
 
@@ -169,7 +170,7 @@ body {
     height: 30px;
     font-size: 20px;
     font-weight: bold;
-    background-color: green;
+    background-color: #457B98;
 }
 
 .profileList{
@@ -179,7 +180,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
 .projectDetails{
@@ -187,7 +188,7 @@ body {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    /* background-color: pink; */
     gap: 10px;
 }
 
@@ -196,7 +197,7 @@ body {
     height: 30px;
     font-size: 20px;
     font-weight: bold;
-    background-color: green;
+    background-color: #457B98;
 }
 
 .project{
@@ -206,7 +207,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
 .projectDuration{
@@ -222,7 +223,7 @@ body {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    /* background-color: pink; */
     gap: 10px;
 }
 
@@ -231,7 +232,7 @@ body {
     height: 30px;
     font-size: 20px;
     font-weight: bold;
-    background-color: green;
+    background-color: #457B98;
 }
 
 .achievementsList{
@@ -241,7 +242,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
 .hobbiesDetails{
@@ -249,7 +250,7 @@ body {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    /* background-color: pink; */
     gap: 10px;
 }
 
@@ -258,7 +259,7 @@ body {
     height: 30px;
     font-size: 20px;
     font-weight: bold;
-    background-color: green;
+    background-color: #457B98;
 }
 
 .hobbiesList{
@@ -268,7 +269,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
 .languagesDetails{
@@ -276,7 +277,7 @@ body {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    /* background-color: pink; */
     gap: 10px;
 }
 
@@ -285,7 +286,7 @@ body {
     height: 30px;
     font-size: 20px;
     font-weight: bold;
-    background-color: green;
+    background-color: #457B98;
 }
 
 .languagesList{
@@ -295,7 +296,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 /* 
 @media screen and (max-width: 1024px) {
@@ -317,5 +318,6 @@ body {
 @media screen and (max-width: 600px) {
     .resume {
         width: 100%;
+        height: 100%;
     }
 }
