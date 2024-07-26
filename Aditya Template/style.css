@@ -298,6 +298,19 @@ body {
     align-items: center;
     /* background-color: lightblue; */
 }
+
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 /* 
 @media screen and (max-width: 1024px) {
     .resume {
