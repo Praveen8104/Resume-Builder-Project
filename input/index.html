@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="../Main_Template_5/index.html">Open</a>
+    <script>
+        localStorage.clear();
+        var personal_details = ["Praveen Reddy","praveenreddygoli8@gmail.com","+91XXXXXXXXXX","Jangareddygudem,Andhra Pradesh,India,534447"];
+
+        var education_details = [["Aditya College of Engineering","kakinada","8.0","B.Tech in Computer Science","2022","2026"],["Aditya Junior College","kakinada","8.5","BIEAP in MPC","2020","2022"],
+        ["Aditya Public School","kakinada","10.0","SSC","2019","2020"]];
+        
+        var internships = [["Internship 1","2026","2027","SDE","Developed a software application."],["Internship 2","2027","2028","Developer","Developed a website."]];
+        
+        var skills = ["C","C++","Java","Python","HTML","CSS","JavaScript"];
+
+        var profiles = ["LinkedIn","GitHub","HackerRank","CodeChef","LeetCode","GeeksforGeeks"];
+
+        var projects = [["Project 1","2026","2027","SDE","Developed a software application."],["Project 2","2027","2028","Developer","Developed a website."],["Project 3","2028","2029","SDE","Developed a software application."]];
+
+
+        var achievements = [["Badge1","Badge2","Badge3"],["Acheivement1","Acheivement2","Acheivement3","Acheivement4"],["Hackathon1","Hackathon2","Hackathon3"]];
+
+        var hobbies = ["Hobby 1","Hobby 2","Hobby 3"];
+
+        var languages = ["Telugu","English","Hindi"];
+
+        localStorage.setItem("personal_details",JSON.stringify(personal_details));
+        localStorage.setItem("education_details",JSON.stringify(education_details));
+        localStorage.setItem("skills",JSON.stringify(skills));
+        localStorage.setItem("profiles",JSON.stringify(profiles));
+        localStorage.setItem("projects",JSON.stringify(projects));
+        localStorage.setItem("internships",JSON.stringify(internships));
+        localStorage.setItem("achievements",JSON.stringify(achievements));
+        localStorage.setItem("hobbies",JSON.stringify(hobbies));
+        localStorage.setItem("languages",JSON.stringify(languages));
+
+
+    </script>
+</body>
+</html>

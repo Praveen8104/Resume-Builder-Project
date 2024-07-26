@@ -269,8 +269,8 @@ a{
 }
 
 .companies{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: white;
     margin: 50px;
     border-radius: 20px;
@@ -282,8 +282,8 @@ a{
 }
 
 .companies img{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
