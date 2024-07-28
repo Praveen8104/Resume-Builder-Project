@@ -1,0 +1,46 @@
+.main{
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("background.jpeg"); */
+    background-size: 100% 100%;
+}
+.inner{
+    border: 3px solid black;
+    width: 350px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.inner input{
+    width: 95%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: aquamarine;
+    display: none;
+}
+.inner .buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.inner .buttons button{
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid red;
+    /* display: none; */
+}
+.previous{
+    display: none;
+}
+.continue{
+    display: none;
+}
+#form{
+    display: none;
+}

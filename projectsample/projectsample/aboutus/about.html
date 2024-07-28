@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>About us</title>
+		<link rel="stylesheet" href="about.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	</head>
+	<body>
+		<div class="home">
+			<div class="navbar">   
+				<img src="../Assests/rblogo3.png" alt="this is an encrypted message"> 
+				<div class="items">
+					<div class="Home"><a href="../home/homepage.html">Home</a></div>
+					<div class="aboutus"><a href="./about.html">About us</a></div>
+					<div class="Contact"><a href="../ContactPage/contact.html">Contact</a></div>
+					<div class="accounts"><a href="../login/loginpage.html">Logout</a></div>
+				</div>
+				<i class="fa-solid fa-bars" id="iframe" onclick="fun()"></i>
+			</div> 
+		</div>
+		<div class="about" id="about">
+			<div class="buttons">
+				<div class="uiverse" onclick="Vinay()">
+					<span class="tooltip" id="vi">Vinay</span>
+					<span>Team Leader</span>
+				</div>
+				<div class="uiverse" onclick="Jyothi()">
+					<span class="tooltip" id="js">Jyothi Swaroopa</span>
+					<span>Team Member 1</span>
+				</div>
+				<div class="uiverse" onclick="Mounika()">
+					<span class="tooltip" id="mo">Mounika</span>
+					<span>Team Member 2</span>
+				</div>
+				<div class="uiverse" onclick="Praveen()">
+					<span class="tooltip" id="pr">Praveen</span>
+					<span>Team Member 3</span>
+				</div>
+				<div class="uiverse" onclick="Supriya()">
+					<span class="tooltip" id="su">Supriya</span>
+					<span>Team Member 4</span>
+				</div>
+				<div class="uiverse" onclick="Venkatateja()">
+					<span class="tooltip" id="vk">Venkata teja</span>
+					<span>Team Member 5</span>
+				</div>
+			</div>
+			<div class="card">
+				<div class="leftimage">
+					<img src="../Assests/vinay.jpg" id="leftimage">
+				</div>
+				<div class="rightdescription">
+					<p class="teamname" id="teamname">Byte Brigadors</p>
+					<p class="memberdesignation" id="memberdesignation">Team Lead</p>
+					<p class="name"><i class="fa-regular fa-id-card"></i>&nbsp;&nbsp;<span id="name">Name : Vinay </span></p>
+					<p class="position" id="position"><i class="fa-solid fa-laptop-code">&nbsp;&nbsp;</i><span>Position : Web developer </span></p>
+					<p class="matter" id="matter">As the Team Lead, I am committed to guiding our talented team towards achieving outstanding results. I excel in fostering collaboration, facilitating open communication, and driving innovation. With a strategic mindset and a commitment to mentorship, I ensure that every project is executed with precision and excellence, aligning with our organizational goals and values. My leadership inspires our team to reach new heights and deliver exceptional outcomes for our clients.</p>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar" id="sidebar">
+			<div class="navbar" id="navbar">   
+				<i class="fa-solid fa-xmark" id="crossmark" onclick="jyo1()" style="color: #000000;"></i>
+				<img src="../Assests/Logo.png" alt="this is an encrypted message"> 
+				<div class="items" >
+					<div class="Home"><a href="../home/homepage.html">Home</a></div>
+					<div class="aboutus"><a href="#about">About us</a></div>
+					<div class="Contact"><a href="../ContactPage/contact.html">Contact</a></div>
+					<div class="accounts"><a href="../login/loginpage.html">Log out</a></div>
+				</div>
+			</div> 
+		</div>
+		<script src="./about.js"></script>
+	</body>
+</html>

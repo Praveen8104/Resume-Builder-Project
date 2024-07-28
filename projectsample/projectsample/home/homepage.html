@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="homepage.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<div class="homepage">
+			<div class="hero"></div>
+			<nav>
+				<div class="logo">
+					<img src="../Assests/rblogo3.png" alt="" width="100%" height="100%">
+				</div>
+				<ul>
+					<li><a href="./homepage.html">Home</a></li>
+					<li><a href="../aboutus/about.html">About us</a></li>
+					<li><a href="../ContactPage/contact.html">Contact us </a></li>
+					<li>
+						<div class="Accounts">
+							<span class="account-text" onclick="fun(this)">Accounts</span>
+							<div class="Accountschild">
+							<div class="rollno">
+								<div class="userlogo"> <i class="fa fa-user account-icon" aria-hidden="true"></i></div>
+								<div class="userinfo" id="userLogin">23A95A6113</div>
+							</div>
+							<div class="logout"><a href="../login/loginpage.html" style="color: black; cursor: pointer;">Logout</a></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div id="menubar">
+					<i class="fa fa-bars" aria-hidden="true" onclick="menuopen(this)"></i>
+				</div>
+			</nav>  
+			<div class="homesecondpage">
+				<div class="homepagecotation">
+				<div class="cotation">A well-crafted resume is your ticket to the career of your dreams.</div>
+				<div class="buttons">
+					<a href="#down"><div class="homepageseepreview">See Preview &nbsp; <i class="fa-solid fa-angles-down" style="color: white;"></i> </div></a> 
+					<a href="../instruction/index.html"><div class="homepagegetstarted">Get Started &nbsp; <i class="fa-solid fa-angles-right" style="color: white;"></i></div></a>
+				</div>
+				</div>
+				<div class="homepageimage">
+					<!-- <img src="sample2.png" alt=""> -->
+				</div>
+				<div class="animated_div"></div>
+					<div class="animated_div2">
+						<div class="items">
+							<div class="Home"><a href="">Home</a>
+								<div class="wrong" onclick="goback(this)"><i class="fa fa-times" aria-hidden="true"></i></div>
+							</div>
+						<div class="aboutus"><a href="../aboutus/about.html">About us</a></div>
+						<div class="Contact"><a href="../ContactPage/contact.html">Contact</a></div>
+						<div class="accounts" onclick="logout(this)">Accounts &nbsp;<i class="fa-solid fa-angle-down" id="icon"></i>
+							<div class="logoutchild">
+								<div class="logoutrollno" id="userLogin1">23A95A6113</div>
+								<div class="logoutbutton"><a href="../login/loginpage.html">Logout</a></div>
+							</div>
+						</div> 
+					</div>
+				</div>
+			</div>
+			<div class="down" id="down">
+				<div class="upperPart" id="upperPart">
+					<div class="content1" id="content1">
+						Your Personal resume Coach
+					</div>
+					<div class="content2" id="content2">
+						Join over 1 million experienced professionals, graduates and students who have used Resume Worded's toolkit
+						to get ahead in their careers.
+					</div>
+				</div>
+				<div class="lowerPart" id="lowerPart">
+					<div class="buttonsBar" id="buttonsBar">
+						<div class="button" id="button1" onclick="showOverview()" style="background-color: #143E8A;">How to Use</div>
+						<div class="button" id="button2" onclick="showResumeSample()">Resume Samples</div>
+						<div class="button" id="button3" onclick="showCompanies()">Companies</div>
+						<div class="button" id="button4" onclick="showReviews()">Reviews</div>
+					</div>
+					<div class="overview" id="overview">
+						<div class="youtubeVideo">
+							Video
+						</div>
+						<div class="steps">
+							<div class="innerSteps">Step 1 &nbsp; -
+								 <!-- <i class="fa-solid fa-plus" id="plus1" onclick="instruct1()"></i> <i class="fa-solid fa-minus" id="minus1" style="display: none;"></i> -->
+								&nbsp; <span> Read the instructions carefully</span></div>
+							<div class="instruction1" id="instruction1">Read all the instructions mentions below and then move forward, It will be easy to build your resume.</div>
+							<div class="innerSteps">Step 2 &nbsp; -
+								<!-- <i class="fa-solid fa-plus" id="plus2" onclick="instruct2()"></i> <i class="fa-solid fa-minus" id="minus2" style="display: none;"></i> -->
+								&nbsp;<span> Fill the Details carefully</span></div>
+							<div class="instruction1" id="instruction2">Read all the instructions mentions below and then move forward, It will be easy to build your resume.</div>
+							<div class="innerSteps">Step 3 &nbsp; -
+								<!-- <i class="fa-solid fa-plus" id="plus3" onclick="instruct3()"></i> <i class="fa-solid fa-minus" id="minus3" style="display: none;"></i> -->
+								&nbsp;<span> Choose the Template</span></div>
+							<div class="instruction1" id="instruction3">Read all the instructions mentions below and then move forward, It will be easy to build your resume.</div>
+							<div class="innerSteps">Step 4 &nbsp; -
+								<!-- <i class="fa-solid fa-plus" id="plus4" onclick="instruct4()"> </i> <i class="fa-solid fa-minus" id="minus4" style="display: none;"></i> -->
+								&nbsp;<span>Download Your Resume</span></div>
+							<div class="instruction1" id="instruction4">Read all the instructions mentions below and then move forward, It will be easy to build your resume.</div>
+							<a href="../instruction/index.html"><div class="buildResume" id="buildResume">Build Resume &nbsp; <i class="fa-solid fa-angles-right" style="color: white;"></i></div></a>
+						</div>
+					</div>
+					<div class="resumeSamples" id="resumeSamples">
+						<div class="sampleresume">
+							<img src="../Assests/Final Template 1.png" alt="">
+						</div>
+						<div class="sampleresume">
+							<img src="../Assests/Final Template 2.png" alt="">
+						</div>
+						<div class="sampleresume">
+							<img src="../Assests/Final Template 4.png" alt="">
+						</div>
+					</div>
+					<div class="showCompanies" id="showCompanies">
+						<div class="tagLine">
+							Companies where our users have been placed
+						</div>
+						<div class="companiesGrid">
+							<div class="companies">
+								<img src="https://play-lh.googleusercontent.com/neiEWqiRv8h5B56f1ss5EdsjgC1ofOMoyFt_KqfdWrUMoepxwRXhGmWpBERTr3w7jtA"
+									alt="">
+							</div>
+							<div class="companies">
+								<img src="https://sretips.com.br/images/aws/aws.png" alt="">
+							</div>
+							<div class="companies">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdX9wVr-yr0d9aRa1u3m02Bl7c8DjGYsZu-Q&s"
+									alt="">
+							</div>
+							<div class="companies">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA5r0_FrSjm2OgttQLwh_CnVCnzbJ7dLv6oA&s"
+									alt="">
+							</div>
+							<div class="companies">
+								<img src="https://m.media-amazon.com/images/I/51HCHFclmmL.jpg" alt="">
+							</div>
+							<div class="companies">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-P7PSO_hZpFpHrAtfV3Xvpb13CT7V9kuKxg&s"
+									alt="">
+							</div>
+							<div class="companies">
+								<img src="https://hblapis.cmots.com/complogodata/IImagesNew/Infosys_56909713360_2806.png"
+									alt="">
+							</div>
+							<div class="companies">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3TGjCmAdVVmQUiiMLA6HXs8wLhuYQ1NBSYzhxpNf9rjlNlD06UgspOqbmB1VDh6oZT5M&usqp=CAU"
+									alt="">
+							</div>
+							<div class="companies">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZShoVBhCZoflB-I35i_BsVH9Lexeanbbq2Q&s"
+									alt="">
+							</div>
+							<div class="companies">
+								<img src="https://s3.ap-southeast-1.amazonaws.com/cdn.elitmus.com/pt31qa7bv8n2ly8qvi4f05385apg"
+									alt="">
+							</div>
+							<div class="companies">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTye_LQtuQFO20pyEQVGsI72tJdI0OVTYmFXw&s"
+									alt="">
+							</div>
+							<div class="companies">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLEHTiOZdWh0zxJBxILJ1TbGvRydKKVo__g&s"
+									alt="">
+							</div>
+						</div>
+					</div>
+					<div class="reviews" id="reviews">
+						<div class="reviewTagLine">
+							Trusted by over 1 million jobseekers around the world.
+						</div>
+						<div class="reviewsGrid">
+							<div class="completeReview">
+								<div class="reviewDescription">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+									autem quod, facilis nobis velit architecto odit ad in. Dolor sequi delectus fugiat corporis
+									totam. Odit, delectus? Dolorem ea sit dolorum.."</div>
+								<div class="nameAndRole">
+									<div class="reviewerName">John Doe</div>
+									<div class="reviewerRole">Software Engineer</div>
+								</div>
+							</div>
+							<div class="completeReview">
+								<div class="reviewDescription">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+									autem quod, facilis nobis velit architecto odit ad in. Dolor sequi delectus fugiat corporis
+									totam. Odit, delectus? Dolorem ea sit dolorum.."</div>
+								<div class="nameAndRole">
+									<div class="reviewerName">John Doe</div>
+									<div class="reviewerRole">Software Engineer</div>
+								</div>
+							</div>
+							<div class="completeReview">
+								<div class="reviewDescription">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+									autem quod, facilis nobis velit architecto odit ad in. Dolor sequi delectus fugiat corporis
+									totam. Odit, delectus? Dolorem ea sit dolorum.."</div>
+								<div class="nameAndRole">
+									<div class="reviewerName">John Doe</div>
+									<div class="reviewerRole">Software Engineer</div>
+								</div>
+							</div>
+							<div class="completeReview">
+								<div class="reviewDescription">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+									autem quod, facilis nobis velit architecto odit ad in. Dolor sequi delectus fugiat corporis
+									totam. Odit, delectus? Dolorem ea sit dolorum.."</div>
+								<div class="nameAndRole">
+									<div class="reviewerName">John Doe</div>
+									<div class="reviewerRole">Software Engineer</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+		<script src="homepage.js"></script>
+	</body>
+</html>

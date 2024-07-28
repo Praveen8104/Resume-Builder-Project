@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final 6 Input</title>
+</head>
+
+<body>
+    <a href="./index.html">Open</a>
+    <script>
+        localStorage.clear();
+
+        var CareerObjectives = [
+            "A well organised and motivated employee capable of working under pressure and with excellent time management skills, seeking to join in this company as a communication Expert to help ensure good internal communications and seamless cliet interactions.",
+            "Dedicated and goal-oriented proffessional with experience nurturing positive client relationships to drive key bussiness metrics, such as client satisfaction, Adept at streamlining processes, enhancing productivity, and developing customer service solutions.",
+            "professional and passionate about the job and having the ability to launch sales programs that generate record-setting sales revenues, Looking to bring superior communication, analytical, and problem-solving skills to achieve sales targets at Branded products.",
+            "Responsible and organised college student, with a demonstrated taklent for improving customer service. Seeking to apply my abilities and enthusiasm to a part-time role as a Customer Service Assistant at this company.",
+            "Highly organised and wanted to be detail-oriented professional in administrative roles, seeking the position of an administrative officer.",
+            "Well motivated and proficient in managing office opertions, streamlining processes, and maintaining office efficiency. Adept at coordinating meetings, managing inventory, and building relationships with staff and clients. Looking forward to bringing strong supervisory and organizational skills to a dynamic team while fostering a positive work environment.",
+            "Seeking a challenging position in field where I can utilize my skills to contribute to the success of the company, To secure a role in a dynamic company that offers opportunities for professional growth and advancement.",
+            "Detail-oriented individual seeking to help the company to achieve its goals as a best position, Excellent at skill and dedicated to delivering top-quality output.",
+            "A competitive and challenging individual to develop the company growth and reputation, where I can serve your organization and establish a career for myself.",
+            "Seeking a responsible job with an opportunity for professional challenges,To secure a challenging position that utilizes my skills and talents, while allowing me the opportunity to grow professionally.",
+            "To join a company that offers me a stable and positive atmosphere and inspires me to enhance and therefore to innovate the work culture for the betterment of all parties concerned.",
+            "Highly passionated and also to gain employment with a company or institution that offers me a consistently positive atmosphere to learn new technologies and implement them for the betterment of the business.",
+            "To secure a position as a senior accountant in this company where I can utilize my talents and skills in accounting and finance to make a positive contribution to the organization.",
+            "To obtain a position as a manager in this company that offers opportunities for career growth and development, And also seeking a challenging role as a manager in this company that values creativity and innovation.",
+            "Excellent communication, problem-solving, and organizational skills, Able to adapt quickly to new situations and learn new concepts quickly, And also seeking a challenging position in this company that values innovation, creativity, and hard work.",
+            "Expertise in delivering complex, high-visibility projects. Able to establish strong working relationships with diverse teams and stakeholders. Looking for a challenging role that will utilize my skills and experience in project management.",
+            "I am seeking a position that will allow me to use my skills and talents to positively impact the organization. In particular, I would like to work on projects that require me to use my machine learning and predictive modeling skills. I am confident that I can significantly contribute to the organization and help achieve its goals.",
+            "To secure a position with a company where I can use my skills and experience to build high-quality websites. In addition, I am motivated to learn new technologies and stay up-to-date on industry best practices. Ultimately, I want to find a position that will allow me to grow my career in web development.",
+            "Self-motivated graduate with having interest and more passionate in administrative work seeking administrative assistant role, with strong attention to detail and collaborative skills.",
+            "Software engineering student eager to tackle job opportunities in web development. Has full range of HTML/CSS, testing and debugging skills and an efficient, deadline-focused approach to work.",
+            "Highly motivated graduate with a strong academic background and enthusiasm for development. Seeking a job opportunity to apply theoretical knowledge, strong communication and outstanding research skills in a laboratory setting.",
+            "Offering strong work ethic, attention to detail and award-winning client service skills, Eager to expand my knowledge, to mke or create new innovations for company's growth.",
+            "Passionate about the profession for seeking an opportunity to apply my quality skills to make a meaningful impact in a collaborative work environment.",
+            "A highly motivated, hardworking individual looking for a responsible role in a reputable organization, seeking a role in a company where I can contribute my ideas and be mentored towards a successful career.",
+            "An organized and motivated employee capable of time management and working under pressure in all environments. Seeking to join in this company as a higher position to ensure good internal communications and budget management.",
+            "Dedicated to getting an opportunity where I can maximize my potential and significantly contribute to the organization's growth by applying my skills.",
+            "Looking to work in an organization that can provide a variety of opportunities that allow me to expand my skills and knowledge while working towards achieving the organizational goals.",
+            "To land a job in a marketing organisation that offers a stimulating learning environment for developing and putting into practice new ideas for the company's development. Looking for entry-level employment where I can develop my abilities as a marketing expert and help a firm succeed overall.",
+            "Self-Motivated team member seeking work as a lead web developer with next generation web Development where I can use my leadership skills and extensive understanding of web design to fulfil client demands and surpass their expetations.",
+            "Highly skilled in communication, collaboration, and technical documentation, seeking a position in dynamic organisation where I can launch my career and work towards building a strong skill set.",
+            "Demonstrating the track record of creating and carrying out creative social media strategies that improve sales and develop the growth of company's reputation",
+            "Highly-motivated, passionate and certified Scientific Programmer and highly talented in developing, maintaining, and upgrading versions of software used for scientific research.",
+            "An aspiring finance professional seeking a mid-level roles in an organization that could help me learn new skills. Excited to deliver my potential of financial analysis and strategic implementation with a novel approach toward the development of the company.",
+            "A self-motivated and highly passionate individual, seeking a management position that will help me utilize my educational and training experience in Management to offer my insights and steer the business towards success.",
+            "Seeking an entry-level position to begin my career in a high-level professional environment. To obtain a challenging and rewarding position in a dynamic organization where I can utilize my skills and talents to contribute to the growth and success of the company.",
+            "Motivated enthusiast eager to start a career journey in Industry, bringing a fresh perspective, strong academic background, and a commitment to excellence in specific skills and responsibilities.",
+            "Driven graduate passionate about the specific aspect of the industry, seeking an entry-level position to contribute my skills to company success and develop professionally in Field.",
+            "Goal-oriented aspiring to make a meaningful impact in Industry, utilizing my skills to support company objectives while expanding my knowledge and skills in specific areas.",
+            "Dedicated recent graduate pursuing opportunities in company, aiming to apply my strong academic background in relevant coursework and practical experience in internships, to contribute effectively to team goals.",
+            "Ambitious enthusiast with a focus on Specialization, seeking an entry-level position to apply my knowledge acquired through coursework and practical experience, Dedicated to contributing to company growth and success.",
+            "Passionate graduate pursuing a meaningful career in company, Excited to bring my skills to a dynamic organization where I can learn from industry leaders, contribute to innovative projects, and achieve professional milestones.",
+            "Aspiring with a commitment to excellence and a passion, Eager to leverage my skills to support team goals while continuously expanding my knowledge and capabilities.",
+            "Punctual and reliable enthusiast eager to launch a career in company, Bringing a disciplined approach to tasks and deadlines, with a goal of supporting team operations effectively and consistently.",
+            "Punctuality-focused aspiring to excel in company, known for promptness and reliability in task execution, Eager to contribute my strong time management skills to support company goals and achieve mutual success.",
+            "Reliable graduate ready to ensure punctual results in company, Bringing a track record of meeting deadlines and achieving goals, aiming to apply my punctuality skills to drive efficiency and success for company.",
+            "Eager with a strong emphasis on timeliness and efficiency, Seeking to apply my punctuality and time management skills to support company objectives and contribute to organizational growth and success.",
+            "Motivated enthusiast with a focus on meeting deadlines and exceeding expectations, Looking for opportunities in Industry where I can leverage my punctuality skills to deliver consistent results and drive continuous improvement for company.",
+            "Innovative graduate eager to pioneer new solutions, Seeking a role where I can leverage my creative thinking and problem-solving abilities to drive transformative change and contribute to team success.",
+            "Global-minded graduate committed to fostering cross-cultural collaboration, Eager to contribute my international experience and language skills to support company in achieving global business objectives.",
+            "Creative with a knack for visual storytelling and brand communication in Industry, Eager to apply my creative skills and relevant experience to develop compelling campaigns that resonate with audiences for company."
+        ];
+
+        var personal_details = ["Praveen Reddy Goli", "praveenreddygoli8@gmail.com", "+91XXXXXXXXXX", "Jangareddygudem", "Andhra Pradesh", "India", "534447"];
+
+        var education_details = [["Aditya College of Engineering", "kakinada", "8.0", "B.Tech in Computer Science", "2022", "2026"], ["Aditya Junior College", "kakinada", "8.5", "BIEAP in MPC", "2020", "2022"],
+        ["Aditya Public School", "kakinada", "10.0", "SSC", "2019", "2020"]];
+
+        var internships = [["Internship 1", "2026", "2027", "SDE", "Lorem ipsum dolor sit amet, consectetur adipisicing elit"], ["Internship 2", "2027", "2028", "Developer", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, illum possimus amet cupiditate atque pariatur sed est, ipsa quae, animi recusandae deserunt accusantium laboriosam! Repellat dicta natus cum nesciunt sint."]];
+
+        var skills = ["C", "C++", "Java", "Python", "HTML", "CSS", "JavaScript"];
+
+        var profiles = ["https://www.linkedin.com/in/praveen-reddy-goli-a9b786286/", "GitHub", "HackerRank", "CodeChef", "LeetCode", "GeeksforGeeks"];
+
+        var projects = [["Project 1", "2026", "2027", "SDE", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, illum possimus amet cupiditate atque pariatur sed est, ipsa quae, animi recusandae deserunt accusantium laboriosam! Repellat dicta natus cum nesciunt sint."], ["Project 2", "2027", "2028", "Developer", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, illum possimus amet cupiditate atque pariatur sed est, ipsa quae, animi recusandae deserunt accusantium laboriosam! Repellat dicta natus cum nesciunt sint."], ["Project 3", "2028", "2029", "SDE", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, illum possimus amet cupiditate atque pariatur sed est, ipsa quae, animi recusandae deserunt accusantium laboriosam! Repellat dicta natus cum nesciunt sint."]];
+
+        var achievements = [["Badge1", "Badge2", "Badge3"], ["Acheivement1", "Acheivement2", "Acheivement3", "Acheivement4"], ["Hackathon1", "Hackathon2", "Hackathon3"]];
+
+        var hobbies = ["Hobby 1", "Hobby 2", "Hobby 3"];
+
+        var languages = ["Telugu", "English", "Hindi"];
+
+        localStorage.setItem("personal_details", JSON.stringify(personal_details));
+        localStorage.setItem("CareerObjectives", JSON.stringify(CareerObjectives));
+        localStorage.setItem("education_details", JSON.stringify(education_details));
+        localStorage.setItem("skills", JSON.stringify(skills));
+        localStorage.setItem("profiles", JSON.stringify(profiles));
+        localStorage.setItem("projects", JSON.stringify(projects));
+        localStorage.setItem("internships", JSON.stringify(internships));
+        localStorage.setItem("achievements", JSON.stringify(achievements));
+        localStorage.setItem("hobbies", JSON.stringify(hobbies));
+        localStorage.setItem("languages", JSON.stringify(languages));
+    </script>
+</body>
+
+</html>

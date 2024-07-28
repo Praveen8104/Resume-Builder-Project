@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="loginpage.css">
+</head>
+<body>
+    <div class="loginPage" id="loginPage">
+        <div class="loginBlock" id="loginBlock">
+            <div class="signUpForm" id="signUpForm">
+                <div class="sampleText1"> You are attempting to log into the Resume Builder Portal as a User. </div> 
+                <div class="sampleText2">Not A User</div>
+                <button onclick="changeToAdmin()">Login as Admin&nbsp;<i class="fa-solid fa-arrow-left"></i></button>
+            </div>                                                                                                                                                          
+            <div class="logInForm" id="logInForm">
+                <div class="sampleText3">You are attempting to log into the Resume Builder Portal as an admin.</div>
+                <div class="sampleText4">Not An Admin</div>
+                <button onclick="changeToUser()"><i class="fa-solid fa-arrow-right"></i>&nbsp;Login as User</button>
+            </div>
+            <div class="form" id="form">
+                <div class="formName" id="formName">
+                    User Login
+                </div>
+                <form id="innerForm">
+                    <input type="text" class="email" id="email" placeholder="User Id"/>
+                    <input type="password" class="password" id="password" placeholder="Password"/>
+                    <button class="login" id="login" onclick="validate(event)">Login</button>
+                </form>
+                <button onclick="resetPassword()" class="forget" id="forget">Forget Password?</button>
+                <button class="signUpButton" id="signUpButton" onclick="changeToSignUp()">Don't have an account</button>
+                <button onclick="media()" class="changeButton" id="changeButton">Not an User</button>
+            </div>
+        </div>
+    </div>
+    <script src="loginpage.js"></script>
+</body>
+</html>

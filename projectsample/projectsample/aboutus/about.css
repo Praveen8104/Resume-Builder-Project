@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body, html {
+    overflow-x: hidden;
+    position: relative;
+    background: radial-gradient(#5774A0,#3D5177);
+}
+body{
+    height: 100svh;
+    
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.navbar img {
+    height: 50px;
+    width: auto;
+}
+
+.items {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    font-size: 20px;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.items > div{
+    text-align: center;
+    align-content: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    transition: all 0.3s ease;   
+}
+.items > div:hover{
+    transition: all 0.3s ease;   
+    text-align: center;
+    align-content: center;
+    background-color:orange;
+    color:white;
+    /* font-size: 30px; */
+    transform: scale(1.12);
+    overflow: hidden;
+    
+}
+.items>div:hover::after{
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+    content: "";
+    height: 100%;
+    width: 60%;
+    background: linear-gradient(90deg, transparent , rgba(255,255,255,0.5),transparent);
+    filter: drop-shadow(0px 0px 10px white);
+    left: -100%;
+    animation: leftright 2.5s linear infinite;
+}
+/* .items:hover{
+    font-size: 30px;
+} */
+#iframe{
+    display: none;
+    z-index: 999;
+    /* position:absolute;
+    top: 25%; */
+}
+.items div {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.uiverse {
+    position: relative;
+    background: #ffffff;
+    color: #000;
+    padding: 15px;
+    margin: 25px;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.uiverse:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+svg:hover span,
+svg:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.uiverse:hover,
+.uiverse:hover .tooltip,
+.uiverse:hover .tooltip::before {
+    background: linear-gradient(320deg, rgb(3, 77, 146), rgb(0, 60, 255));
+    color: #ffffff;
+}
+
+.card {
+    width: 90%;
+    max-width: 600px;
+    border: 5px solid orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: white;
+}
+
+.leftimage {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftimage img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.rightdescription {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.rightdescription > p {
+    margin: 10px 0;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+#teamname {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#memberdesignation {
+    font-size: 30px;
+    color: #333;
+    color: white;
+}
+
+.name,
+.position {
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+.matter {
+    line-height: 1.5;
+    font-size: 16px;
+}
+.sidebar {
+    height: 130svh;
+    width: 300px;
+    position: fixed;
+    top: -8%;
+    left: 0;
+    backdrop-filter: blur(30px);
+    opacity: 0;
+    width: 0;
+}
+#crossmark{
+    font-size: 30px;
+    margin-left: 80%;
+    margin-top: 10%;
+    /* margin-top: %; */
+
+}
+.sidebar .navbar {
+    padding: 0;
+    margin: 0;
+    height: 90svh;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.sidebar img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.sidebar .items {
+    height: fit-content;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+@keyframes leftright{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 200%;
+    }
+}
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .items {
+        /* z-index: -1; */
+        font-size: 1rem;
+    }
+
+    .items div {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .uiverse {
+        z-index: 99;
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .leftimage {
+        height: 100px;
+        width: 100px;
+    }
+
+    #teamname {
+        font-size: 20px;
+    }
+
+    #memberdesignation,
+    .name,
+    .position,
+    .matter {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #iframe{
+        display: flex;
+        position: absolute;
+        right: 10%;
+        bottom: 35%;
+        font-size: 30px;
+    }
+    .items{
+        display: none;
+        gap: 10px;
+    }
+    .sidebar .items{
+        display: flex;
+        gap: 20px;
+    }
+}

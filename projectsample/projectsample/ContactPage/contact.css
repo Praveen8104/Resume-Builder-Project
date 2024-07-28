@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    height: 100svh;
+    background: radial-gradient(#5774A0,#3D5177);
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #f8f9fa;  */
+    position: relative;
+}
+
+.navbar img {
+    height: 50px;
+    width: auto;
+}
+
+.items {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    font-size: 20px;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.items > div{
+    text-align: center;
+    align-content: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    transition: all 0.3s ease;   
+}
+.items > div:hover{
+    transition: all 0.3s ease;   
+    text-align: center;
+    align-content: center;
+    background-color:orange;
+    color:white;
+    /* font-size: 30px; */
+    transform: scale(1.12);
+    overflow: hidden;
+    
+}
+.items>div:hover::after{
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+    content: "";
+    height: 100%;
+    width: 60%;
+    background: linear-gradient(90deg, transparent , rgba(255,255,255,0.5),transparent);
+    filter: drop-shadow(0px 0px 10px white);
+    left: -100%;
+    animation: leftright 2.5s linear infinite;
+}
+#jyo{
+    display: none;
+    z-index: 999;
+    /* position:absolute;
+    top: 25%; */
+}
+#crossmark{
+    font-size: 30px;
+    margin-left: 75%;
+    /* margin-top: %; */
+
+}
+.items div {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.contact-form {
+    flex: 1;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(30px);
+    border: 3px solid purple;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-form h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.contact-form p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.contact-form label{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+/* .contact-form p,
+.contact-form label {
+    margin-bottom: 20px;
+} */
+.lab{
+    margin-bottom: 20%;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.contact-form textarea{
+    margin-bottom: 70px;
+}
+.contact-form button {
+    max-width: 39%;
+    min-width: 30%;
+    background-color: #D468CA;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form button::before{
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+    content: "";
+    height: 150%;
+    width: 60%;
+    background: linear-gradient(90deg, transparent , rgba(255,255,255,0.5),transparent);
+    filter: drop-shadow(0px 0px 10px white);
+    left: -100%;
+    animation: leftright 2.5s linear infinite;
+}
+.imagecontact {
+    height: 80%;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imagecontact>img {
+    height: 400px;
+    width: 400px;
+}
+.icons {
+    height: 10%;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+}
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.containerOne:hover {
+    background-color: #d62976;
+}
+.containerTwo:hover {
+    background-color: #00acee;
+}
+.containerThree:hover {
+    background-color: #0072b1;
+}
+.containerFour:hover {
+    background-color: #128C7E;
+}
+.socialContainer:active {
+    transform: scale(0.9);
+}
+.socialSvg {
+    width: 17px;
+}
+.socialSvg path {
+    fill: #fff;
+}
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+.sidebar {
+    height: 130svh;
+    width: 300px;
+    position: fixed;
+    top: -8%;
+    left: 0;
+    backdrop-filter: blur(30px);
+    opacity: 0;
+    width: 0;
+    display: flex;
+    align-items: start;
+}
+
+.sidebar .navbar {
+    padding: 0;
+    margin: 0;
+    height: 90svh;
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.sidebar .items {
+    height: fit-content;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    color: black;
+    font-weight: bold;
+}
+
+@keyframes leftright{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 200%;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .items {
+        width: 80%;
+    }
+
+    .contact-form {
+        min-width: 300px;
+        padding: 15px;
+    }
+
+    .imagecontact>img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .icons {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    #jyo {
+        display: flex;
+        /* position: absolute;
+        right: 10%; */
+        /* bottom: 35%; */
+        /* top: 100%; */
+        margin-top:20px;
+        font-size: 30px;
+        margin-left: 87%;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .items {
+        display: none;
+    }
+
+    .sidebar .items {
+        display: flex;
+        gap: 20px;
+    }
+
+    .contact-form {
+        min-width: 250px;
+        padding: 10px;
+    }
+
+    .imagecontact>img {
+        height: 200px;
+        width: 200px;
+    }
+}
