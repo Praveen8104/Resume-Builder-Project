@@ -42,8 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
     skill5.innerHTML = skills[4];
     var skill6 = document.getElementById('skill6');
     skill6.innerHTML = skills[5];
-    var skill7 = document.getElementById('skill7');
-    skill7.innerHTML = skills[6];
 
     //Education Details
     var institute1 = document.getElementById('institute1');
@@ -148,8 +146,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
 document.getElementById('download').addEventListener('click', () => {
     const element = document.querySelector('.resumeBody');
-    html2pdf().from(element).save('Final Template 6.pdf');
+    html2pdf().from(element).save('Final Template 7.pdf');
 });
 
+function choose(){
+    window.location.href = "../../chooseTemplate/Templates.html";
+}

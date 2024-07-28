@@ -55,7 +55,7 @@ a{
 }
 
 #name{
-    font-size: 2rem;
+    font-size: 38px;
     font-weight: bold;
 }
 
@@ -365,7 +365,44 @@ button {
     margin-top: 10px;
 }
 
+button {
+    width: 150px;
+    height: 50px;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
+
+
+.buttons{
+    width: 210mm;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.choose{
+    background-color: rgb(88, 255, 88);
+    border: none;
+    border-radius: 30px ;
+    color: blue;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+}
+.download{
+    background-color: rgb(88, 255, 88);
+    border: none;
+    border-radius: 30px ;
+    color: blue;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+}
 
 
 
