@@ -178,6 +178,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.getElementById('download').addEventListener('click', () => {
     const element = document.querySelector('.resumeBody');
-    html2pdf().from(element).save('Peaky Template.pdf');
+    html2pdf().from(element).save('Final Template 2.pdf');
 });
 
