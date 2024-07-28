@@ -24,34 +24,34 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .resumeHeader{
-    width: 100%;
+    width: 90%;
     height: 10%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
     margin-top: 50px;
 }
 
 .resumeHeaderLeft{
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
 .resumeHeaderRight{
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    column-gap: 5px;
+    justify-content: start;
+    font-size: 14px;
 }
 
 #name{
@@ -66,15 +66,29 @@ a{
 
 .logo i{
     font-size: 1rem;
-    margin: 5px;
+    margin: 3px;
 }
 
 .address{
     display: flex;
 }
 
-.carrerObjective{
+.maindiv1{
     width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.maindiv2{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.carrerObjective{
+    width: 50%;
     height: fit-content;
     /* background-color: green; */
     display: flex;
@@ -85,7 +99,7 @@ a{
 .carrerObjectiveHeading{
     font-size: 20px;
     font-family:'Arial', Times, serif;
-    font-weight: normal;
+    font-weight: 600;
     letter-spacing: 1px;
     /* background-color: yellow; */
 }
@@ -97,7 +111,7 @@ a{
 }
 
 .skills{
-    width: 90%;
+    width: 50%;
     height: fit-content;
     /* background-color: lightgreen; */
     display: flex;
@@ -109,7 +123,7 @@ a{
     width: 100%;
     height: fit-content;
     font-family:'Arial', Times, serif;
-    font-weight: normal;
+    font-weight: 600;
     letter-spacing: 1px;
     font-size: 20px;
     /* background-color: lightgoldenrodyellow; */
@@ -126,7 +140,7 @@ a{
 }
 
 .educationalDetails {
-    width: 90%;
+    width: 50%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -139,7 +153,7 @@ a{
     height: 30px;
     font-size: 20px;
     font-family:'Arial', Times, serif;
-    font-weight: Normal;
+    font-weight: 600;
     /* background-color: #457B98; */
 }
 
@@ -154,7 +168,7 @@ a{
 }
 
 .institute {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .eduDuration {
@@ -191,21 +205,24 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
     /* background-color: lightblue; */
 }
 
-.projectLeft{
+.projectRight{
     width: 85%;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.projectRight{
+.projectLeft{
     width: 15%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:start;
+    align-items: start;
+    margin-top: 5px;
 }
 
 .projectName{
@@ -244,18 +261,19 @@ a{
    gap: 5px;
    justify-content: space-between;
     /* background-color: lightblue; */
-}
-
-.internshipLeft{
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    gap: 50px;
 }
 
 .internshipRight{
+    width: 85%;
+    display: flex;
+    gap: 5px;
+}
+
+.internshipLeft{
     width: 15%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -273,7 +291,7 @@ a{
 }
 
 .profileLinks{
-    width: 90%;
+    width: 50%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -329,6 +347,7 @@ a{
     width: 100%;
     height: fit-content;
     font-size: 16px;
+    margin-left: 15px;
     /* background-color: lightblue; */
 }
 

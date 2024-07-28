@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var personal_details = JSON.parse(localStorage.getItem('personal_details'));
-    var CareerObjectives = JSON.parse(localStorage.getItem('CareerObjectives'));
+    var carrerObjectives = JSON.parse(localStorage.getItem('carrerObjectives'));
     var education_details = JSON.parse(localStorage.getItem('education_details'));
     var internship_details = JSON.parse(localStorage.getItem('internships'));
     var skills = JSON.parse(localStorage.getItem('skills'));
@@ -25,10 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
     pincode.innerHTML = ", " + personal_details[6];
 
     //Carrer Objectives
-    // var career_objective = document.getElementById('career_objective');
-    // var ran = Math.trunc(Math.random() * 50);
-    // career_objective.innerHTML = CareerObjectives[ran];
-    // log(CareerObjectives[Math.trunc(Math.random() * 50)]);
+    var carrerObjectiveContent = document.getElementById('carrerObjectiveContent');
+    carrerObjectiveContent.innerHTML = carrerObjectives[Math.floor(Math.random() * 50)];
+    console.log(carrerObjectives);
 
     //Skills
     var skill1 = document.getElementById('skill1');
@@ -115,20 +114,20 @@ document.addEventListener('DOMContentLoaded', function () {
     var achievement3 = document.getElementById('achievement3');
     achievement3.innerHTML = "-> " + achievements[1][2];
 
-    // var badge1 = document.getElementById('badge1');
-    // badge1.innerHTML = achievements[0][0];
-    // var badge2 = document.getElementById('badge2');
-    // badge2.innerHTML = achievements[0][1];
-    // var badge3 = document.getElementById('badge3');
-    // badge3.innerHTML = achievements[0][2];
+    var badge1 = document.getElementById('badge1');
+    badge1.innerHTML = "-> " + achievements[0][0];
+    var badge2 = document.getElementById('badge2');
+    badge2.innerHTML = "-> " + achievements[0][1];
+    var badge3 = document.getElementById('badge3');
+    badge3.innerHTML = "-> " + achievements[0][2];
 
 
-    // var hackathon1 = document.getElementById('hackathon1');
-    // hackathon1.innerHTML = achievements[2][0];
-    // var hackathon2 = document.getElementById('hackathon2');
-    // hackathon2.innerHTML = achievements[2][1];
-    // var hackathon3 = document.getElementById('hackathon3');
-    // hackathon3.innerHTML = achievements[2][2];
+    var hackathon1 = document.getElementById('hackathon1');
+    hackathon1.innerHTML = "-> " + achievements[2][0];
+    var hackathon2 = document.getElementById('hackathon2');
+    hackathon2.innerHTML = "-> " + achievements[2][1];
+    var hackathon3 = document.getElementById('hackathon3');
+    hackathon3.innerHTML = "-> " + achievements[2][2];
 
     //Hobbies
     // var hobby1 = document.getElementById('hobby1');
