@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var personal_details = JSON.parse(localStorage.getItem('personal_details'));
-    var CareerObjectives = JSON.parse(localStorage.getItem('CareerObjectives'));
+    var carrerObjectives = JSON.parse(localStorage.getItem('carrerObjectives'));
     var education_details = JSON.parse(localStorage.getItem('education_details'));
     var internship_details = JSON.parse(localStorage.getItem('internships'));
     var skills = JSON.parse(localStorage.getItem('skills'));
@@ -24,11 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var pincode = document.getElementById('pincode');
     pincode.innerHTML = ", " + personal_details[6];
 
-    //Carrer Objectives
-    // var career_objective = document.getElementById('career_objective');
-    // var ran = Math.trunc(Math.random() * 50);
-    // career_objective.innerHTML = CareerObjectives[ran];
-    // log(CareerObjectives[Math.trunc(Math.random() * 50)]);
+    // Carrer Objectives
+    var carrerObjectiveContent = document.getElementById('carrerObjectiveContent');
+    carrerObjectiveContent.innerHTML = carrerObjectives[Math.floor(Math.random() * 50)];
 
     //Skills
     var skill1 = document.getElementById('skill1');
@@ -151,6 +149,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.getElementById('download').addEventListener('click', () => {
     const element = document.querySelector('.resumeBody');
-    html2pdf().from(element).save('Final Template 6.pdf');
+    html2pdf().from(element).save('Final Template 8.pdf');
 });
 
