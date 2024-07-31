@@ -1,0 +1,357 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.45;
+}
+
+.resume {
+    width: 210mm;
+    height: 297mm;
+    /* background-color: pink; */
+    /* padding: 10px; */
+}
+a{
+    text-decoration: none;
+}
+.resumeBody {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.personalDetails {
+    width: 95%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: yellow; */
+}
+
+.personalDetailsLeft img {
+    width: 125px;
+    height: 125px;
+}
+
+.personalDetailsRight {
+    width: 250px;
+    height: 150px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    /* background-color: lightblue; */
+}
+
+#name {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: end;
+}
+
+#address{
+    text-align: end;
+}
+
+.educationalDetails{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.educationalDetailsHeading{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #457B98;
+}
+
+.education{
+    width: 100%;
+    height: fit-content;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.eduDuration{
+    display: flex;
+}
+
+.eduDuration div{
+    margin: 2px;
+}
+
+.internshipsDeatils{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.internshipsHeading{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #457B98;
+}
+
+.internship{
+    width: 100%;
+    height: fit-content;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.internshipDuration{
+    display: flex;
+}
+
+.internshipDuration div{
+    margin: 2px;
+}
+
+.skillDetails{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.skillsHeading{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #457B98;
+}
+
+.skillList{
+    width: 100%;
+    height: fit-content;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.profileDetails{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.profileHeading{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #457B98;
+}
+
+.profileList{
+    width: 100%;
+    height: fit-content;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.projectDetails{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.projectHeading{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #457B98;
+}
+
+.project{
+    width: 100%;
+    height: fit-content;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectDuration{
+    display: flex;
+}
+
+.projectDuration div{
+    margin: 2px;
+}
+
+.achievementsDetails{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.achievementsHeading{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #457B98;
+}
+
+.achievementsList{
+    width: 100%;
+    height: fit-content;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.hobbiesDetails{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.hobbiesHeading{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #457B98;
+}
+
+.hobbiesList{
+    width: 100%;
+    height: fit-content;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.languagesDetails{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.languagesHeading{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #457B98;
+}
+
+.languagesList{
+    width: 100%;
+    height: fit-content;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.buttons{
+    width: 210mm;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.choose{
+    background-color: #3D5177;
+    border: none;
+    border-radius: 30px ;
+    color: rgb(255, 255, 255);
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+}
+.download{
+    background-color: #3D5177;
+    border: none;
+    border-radius: 30px ;
+    color: rgb(255, 255, 255);
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    .resume {
+        width: 100%;
+        height: 100%;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .choose{
+        background-color: #3D5177;
+        border: none;
+        border-radius: 30px ;
+        color: rgb(255, 255, 255);
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .download{
+        background-color: #3D5177;
+        border: none;
+        border-radius: 30px ;
+        color: rgb(255, 255, 255);
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+    }
+    
+}

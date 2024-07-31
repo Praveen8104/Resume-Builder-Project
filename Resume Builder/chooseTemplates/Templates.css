@@ -1,0 +1,183 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dimgray;
+    overflow: hidden;
+}
+
+.teja {
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head{
+    width:300px;    
+    height: 80px;
+    text-align:  center;
+    background-color: white;
+    
+    position: relative;
+    border-bottom: 2px solid;
+
+}
+h2{
+    text-align: center;
+    color: black ;
+    font-size: xx-large;
+}
+.mid-div{
+    width: 100%;
+    /* display: flex; */
+   
+    
+}
+
+.mid-div1 {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    /* border: 2px solid; */
+    
+}
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+}
+.vertical-div {
+    max-width: 400px; ;
+    height: 100vh;
+    overflow-y: scroll;
+
+    display: grid;
+    justify-content: space-evenly;
+    background-color: rgb(182, 178, 178);
+    padding: 2%;
+    row-gap: 20px;
+    /* margin-left: 20px; */
+}
+.vertical-div img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.mid-div-main {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 100px;
+}
+.super {
+    width: 200px;
+    height: 50px;
+    font-size: xx-large;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.choose{
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+button:hover{
+    cursor: pointer;
+}
+@media (max-width: 426px) {
+    
+    .teja {
+        width: 360px;
+        height:400px;
+        display:flex;
+        justify-content: space-evenly;
+        flex-direction:column-reverse ;
+        row-gap: 150px;
+        position: relative;
+        top: 29%;
+    }
+    .mid-div-main{
+        width: 100%;
+    }
+    .head {
+        width: 100%;
+        height: 30px;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        font-size:large;
+    }
+    .vertical-div{
+        height: 100px;
+        width: 100%;
+        white-space: nowrap;
+        overflow-x: scroll;
+        flex-direction: row;
+        display: flex;
+        column-gap: 10px;
+    }
+    .vertical-div img{
+        width: 200px;
+    }
+    .mid-div{
+        width: 300px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 250px;
+
+    }
+    .mid-div1{
+        width: 100%;
+        height: 80%;
+    }
+    .card {
+        width: 300px;
+        height: 360px;
+    }
+    img{
+        border: 2px solid ;
+        width: 220px;
+        height: 100px;
+    }
+    .super {
+        width: 150px;
+        height: 40px;
+        font-size: x-large;
+        background-color: white;
+        border-radius: 350px;
+        text-align: center;
+    }
+}

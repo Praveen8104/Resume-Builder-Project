@@ -1,0 +1,473 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.45;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.resume {
+    width: 210mm;
+    height: 297mm;
+    /* background-color: pink; */
+    border: 2px solid black;
+}
+
+.resumeBody {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.resumeHeader{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+    margin-top: 50px;
+}
+
+.resumeHeaderLeft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumeHeaderRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 5px;
+}
+
+#name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo{
+    display: flex;
+    margin: auto;
+}
+
+.logo i{
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.address{
+    display: flex;
+}
+
+.carrerObjective{
+    width: 90%;
+    height: fit-content;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.carrerObjectiveHeading{
+    font-size: 20px;
+    font-family:'Arial', Times, serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    /* background-color: yellow; */
+}
+
+.carrerObjectiveContent{
+    width: 100%;
+    font-size: 16px;
+    /* background-color: lightblue; */
+}
+
+.skills{
+    width: 90%;
+    height: fit-content;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skillsHeading{
+    width: 100%;
+    height: fit-content;
+    font-family:'Arial', Times, serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.skillsContent{
+    width: 100%;
+    height: fit-content;
+    font-size: 16px;
+    text-align: start;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.educationalDetails {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 5px;
+}
+
+.educationalDetailsHeading {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-family:'Arial', Times, serif;
+    font-weight: Normal;
+    /* background-color: #457B98; */
+}
+
+.education {
+    width: 100%;
+    height: fit-content;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.institute {
+    font-weight: bold;
+}
+
+.eduDuration {
+    display: flex;
+}
+
+.eduDuration div {
+    margin: 2px;
+}
+
+.projectDetails {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.projectHeading {
+    width: 100%;
+    height: 30px;
+    font-family:'Arial', Times, serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    /* background-color: #457B98; */
+}
+
+.project {
+    width: 100%;
+    height: fit-content;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.projectLeft{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.projectRight{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectName{
+    font-weight: bold;
+}
+
+.projectDuration {
+    display: flex;
+}
+
+.projectDuration div {
+    margin: 2px;
+}
+
+.internshipDetails{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.internshipHeading{
+    width: 100%;
+    height: 30px;
+    font-family:'Arial', Times, serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    /* background-color: #457B98; */
+}
+
+.internship{
+   display: flex;
+   gap: 5px;
+   justify-content: space-between;
+    /* background-color: lightblue; */
+}
+
+.internshipLeft{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.internshipRight{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.internshipDuration{
+    display: flex;
+}
+
+.internshipDuration div{
+    margin: 2px;
+}
+
+#internshipName1{
+    font-weight: bold;
+}
+
+.profileLinks{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.profileLinksHeading{
+    width: 100%;
+    height: 30px;
+    font-family:'Arial', Times, serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    /* background-color: #457B98; */
+}
+
+.profileLinksContent{
+    width: 100%;
+    height: fit-content;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+    /* background-color: lightblue; */
+}
+
+.profileLinksList div{
+    margin: 5px;
+}
+
+.achievements{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.achievementsHeading{
+    width: 100%;
+    height: 30px;
+    font-family:'Arial', Times, serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    /* background-color: #457B98; */
+}
+
+.achievementsContent{
+    width: 100%;
+    height: fit-content;
+    font-size: 16px;
+    /* background-color: lightblue; */
+}
+
+
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.buttons{
+    width: 210mm;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.choose{
+    background-color: #3D5177;
+    border: none;
+    border-radius: 30px ;
+    color: rgb(255, 255, 255);
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+}
+.download{
+    background-color: #3D5177;
+    border: none;
+    border-radius: 30px ;
+    color: rgb(255, 255, 255);
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .resume {
+        width: 100%;
+        height: 100%;
+    }
+
+    .personalDetailsContent{
+        flex-wrap: wrap;
+        width: 50%;
+        font-size: 10px;
+    }
+
+    .resumeHeader{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .resumeHeaderLeft{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resumeHeaderRight{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 5px;
+    }
+    .education {
+        width: 100%;
+        height: fit-content;
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 5px;
+        /* background-color: lightblue; */
+    }
+    .internship{
+        width: 100%;
+    }
+
+    .internshipDuration{
+        gap: 0px;
+    }
+    .internshipLeft{
+        width: 75%;
+    }
+
+    .internshipRight{
+        width: 25%;
+    }
+
+    .project{
+        width: 100%;
+    }
+
+    .projectDuration{
+        gap: 0px;
+    }
+
+    .projectLeft{
+        width: 75%;
+    }
+
+    .projectRight{
+        width: 25%;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .choose{
+        background-color: #3D5177;
+        border: none;
+        border-radius: 30px ;
+        color: rgb(255, 255, 255);
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .download{
+        background-color: #3D5177;
+        border: none;
+        border-radius: 30px ;
+        color: rgb(255, 255, 255);
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+

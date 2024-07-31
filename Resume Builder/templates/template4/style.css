@@ -1,0 +1,359 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.45;
+}
+
+.underline{
+    border: 1px solid black;
+    width: 95%;
+}
+
+.resume {
+    width: 210mm;
+    height: 297mm;
+    /* background-color: pink; */
+}
+a{
+    text-decoration: none;
+}
+.resumeBody {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.resumeHeader{
+    width: 95%;
+    height: 10%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    /* background-color: yellow; */
+}
+
+#name{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.personalDetails{
+    width: 90%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrerObjective{
+    width: 95%;
+    height: fit-content;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.carrerObjectiveHeading{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    /* background-color: yellow; */
+}
+
+.carrerObjectiveContent{
+    font-size: 16px;
+    /* background-color: lightblue; */
+}
+
+.skills{
+    width: 95%;
+    height: fit-content;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skillsHeading{
+    width: 100%;
+    height: fit-content;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.skillsContent{
+    width: 100%;
+    height: fit-content;
+    font-size: 16px;
+    text-align: start;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.projectDetails {
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.projectHeading {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    /* background-color: #457B98; */
+}
+
+.project {
+    width: 100%;
+    height: fit-content;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* background-color: lightblue; */
+}
+
+.projectUp{
+    display: flex;
+    gap: 5px;
+}
+
+.projectName{
+    font-weight: bold;
+}
+
+.projectDesc{
+    width: 90%;
+}
+
+.projectDuration {
+    display: flex;
+}
+
+.projectDuration div {
+    margin: 2px;
+}
+
+.educationalDetails {
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 5px;
+}
+
+.educationalDetailsHeading {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    /* background-color: #457B98; */
+}
+
+.underline{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.education {
+    width: 100%;
+    height: fit-content;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* background-color: lightblue; */
+}
+
+.institute {
+    font-weight: bold;
+}
+
+.eduDuration {
+    display: flex;
+}
+
+.eduDuration div {
+    margin: 2px;
+}
+
+.profileDetails{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.profileHeading{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    /* background-color: #457B98; */
+}
+
+.profileList{
+    width: 100%;
+    height: fit-content;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* background-color: lightblue; */
+}
+
+.profileList div{
+    margin: 5px;
+}
+
+.internshipDetails{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.internshipHeading{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    /* background-color: #457B98; */
+}
+
+.internship{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+    /* background-color: lightblue; */
+}
+
+.internshipUp{
+    display: flex;
+    gap: 5px;
+}
+
+.intershipDuration{
+    display: flex;
+}
+
+.intershipDuration div{
+    margin: 2px;
+}
+
+#internshipName1{
+    font-weight: bold;
+}
+
+.otherSkills{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    gap: 10px;
+}
+
+.otherSkillsHeading{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    /* background-color: #457B98; */
+    display: flex;
+    flex-direction: column;
+}
+
+.otherSkill{
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.buttons{
+    width: 210mm;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.choose{
+    background-color: #3D5177;
+    border: none;
+    border-radius: 30px ;
+    color: rgb(255, 255, 255);
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+}
+.download{
+    background-color: #3D5177;
+    border: none;
+    border-radius: 30px ;
+    color: rgb(255, 255, 255);
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    .resume {
+        width: 100%;
+        height: 100%;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .choose{
+        background-color: #3D5177;
+        border: none;
+        border-radius: 30px ;
+        color: rgb(255, 255, 255);
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .download{
+        background-color: #3D5177;
+        border: none;
+        border-radius: 30px ;
+        color: rgb(255, 255, 255);
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+    }
+    
+}
